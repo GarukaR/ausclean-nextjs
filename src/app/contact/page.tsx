@@ -30,9 +30,9 @@ const CONTACT_DETAILS = [
   {
     icon: MapPin,
     label: "Based in",
-    value: "Melbourne, VIC",
+    value: "Hampton Park, VIC",
     href: "#map",
-    sub: "Melbourne CBD, inner and south-east suburbs",
+    sub: "South East Melbourne centered around Hampton Park",
   },
 ];
 
@@ -72,6 +72,52 @@ const CONNECT_OPTIONS = [
     btnStyle: "bg-brand-accent hover:bg-brand-accent-dark text-white",
   },
 ];
+
+const SERVICE_AREAS = [
+  { name: "Hampton Park", travelCharges: false },
+  { name: "Hallam", travelCharges: false },
+  { name: "Endeavour Hills", travelCharges: false },
+  { name: "Dandenong", travelCharges: false },
+  { name: "Dandenong North", travelCharges: false },
+  { name: "Noble Park", travelCharges: false },
+  { name: "Clyde", travelCharges: false },
+  { name: "Clyde North", travelCharges: false },
+  { name: "Springvale", travelCharges: false },
+  { name: "Springvale South", travelCharges: false },
+  { name: "Lynbrook", travelCharges: false },
+  { name: "Lyndhurst", travelCharges: false },
+  { name: "Keysborough", travelCharges: false },
+  { name: "Carrum Downs", travelCharges: false },
+  { name: "Brighton East", travelCharges: false },
+  { name: "Narre Warren", travelCharges: false },
+  { name: "Narre Warren South", travelCharges: false },
+  { name: "Cranbourne", travelCharges: false },
+  { name: "Cranbourne North", travelCharges: false },
+  { name: "Cranbourne East", travelCharges: false },
+  { name: "Cranbourne West", travelCharges: false },
+  { name: "Junction Village", travelCharges: false },
+  { name: "Officer", travelCharges: false },
+  { name: "Beaconsfield", travelCharges: false },
+  { name: "Pakenham", travelCharges: false },
+  { name: "Berwick", travelCharges: false },
+  { name: "Huntingdale", travelCharges: true },
+  { name: "Clayton", travelCharges: true },
+  { name: "Mulgrave", travelCharges: true },
+  { name: "Mount Waverley", travelCharges: true },
+  { name: "Glen Waverley", travelCharges: true },
+  { name: "Rowville", travelCharges: true },
+  { name: "Cockatoo", travelCharges: true },
+  { name: "Gembrook", travelCharges: true },
+  { name: "Emerald", travelCharges: true },
+  { name: "Pakenham Upper", travelCharges: true },
+  { name: "Seaford", travelCharges: true },
+  { name: "Frankston", travelCharges: true },
+  { name: "Chelsea", travelCharges: true },
+  { name: "Mordialloc", travelCharges: true },
+  { name: "Mentone", travelCharges: true },
+  { name: "Cheltenham", travelCharges: true },
+];
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function ContactPage() {
@@ -88,7 +134,7 @@ export default function ContactPage() {
               <span className="text-brand-accent-dark">hear from you.</span>
             </h1>
             <p className="text-brand-muted text-lg leading-relaxed">
-              Whether you have a question, want to book a clean, or just want to say hello — we&apos;re here and happy to help.
+              Whether you have a question, want to book a clean, or just want to say hello, we&apos;re here and happy to help.
             </p>
           </div>
         </div>
@@ -180,42 +226,19 @@ export default function ContactPage() {
           <div className="bg-white rounded-3xl border border-brand-border p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-brand-text mb-2">Service Areas</h2>
             <p className="text-brand-muted mb-6">
-              We proudly serve Melbourne CBD, inner suburbs, and the south-east. If you&apos;re unsure if we cover your area, just ask!
+              We proudly serve the areas listed below. If you&apos;re unsure if we cover your area, just ask!
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-              {[
-                "Melbourne CBD",
-                "Southbank",
-                "Docklands",
-                "St Kilda",
-                "South Yarra",
-                "Prahran & Windsor",
-                "Richmond",
-                "Hawthorn",
-                "Toorak",
-                "Malvern",
-                "Caulfield",
-                "Camberwell",
-                "Brighton",
-                "Elwood & Elsternwick",
-                "Glen Iris",
-                "Bentleigh",
-                "Carnegie",
-                "Oakleigh",
-                "Chadstone",
-                "Clayton",
-                "Murrumbeena",
-                "Burwood",
-                "Box Hill",
-                "Surrey Hills",
-                "Balwyn",
-              ].map((area) => (
+              {SERVICE_AREAS.map(({name, travelCharges}) => (
                 <li
-                  key={area}
+                  key={name}
                   className="flex items-center gap-2 px-3 py-2 rounded-lg bg-brand-accent-bg text-brand-text border border-brand-accent-border"
                 >
                   <MapPin className="w-4 h-4 text-brand-accent-dark" />
-                  <span className="text-sm">{area}</span>
+                  <span className="text-sm">{name}</span>
+                  {travelCharges && (
+                    <span className="text-xs text-brand-muted ml-auto">(Travel Charges Apply)</span>
+                  )}
                 </li>
               ))}
             </ul>

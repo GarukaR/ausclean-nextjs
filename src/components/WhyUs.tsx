@@ -6,7 +6,7 @@ const FEATURES = [
     icon: Zap,
     title: "Fast & Reliable Service",
     description:
-      "We show up on time, every time. Our trained professionals work efficiently without cutting corners — your space is spotless before you know it.",
+      "We show up on time, every time. Our trained professionals work efficiently without cutting corners, your space is spotless before you know it.",
     stat: "98%",
     statLabel: "On-time arrival rate",
     accent: "bg-brand/10 text-brand",
@@ -15,8 +15,8 @@ const FEATURES = [
     icon: CalendarClock,
     title: "Flexible Scheduling",
     description:
-      "Early morning, evenings, weekends — we work around your life. Book online in minutes and reschedule anytime, no hassle.",
-    stat: "Same day",
+      "Early morning, evenings, weekends, because we work around your life. Book online in minutes and reschedule anytime, no hassle.",
+    stat: "Easy and Quick",
     statLabel: "Booking available",
     accent: "bg-brand-accent/10 text-brand-accent",
   },
@@ -33,8 +33,8 @@ const FEATURES = [
     icon: ShieldCheck,
     title: "Insured & Vetted Staff",
     description:
-      "Every cleaner is background-checked, fully insured, and trained to our high standards. You can trust who we send into your home or office.",
-    stat: "5-star",
+      "Every cleaner is background-checked(Police Checked), fully insured, and trained to our high standards. You can trust who we send into your home or office.",
+    stat: "Punctual & Friendly",
     statLabel: "Verified professionals",
     accent: "bg-brand/10 text-brand",
   },
@@ -56,8 +56,7 @@ export default function WhyUs() {
             <br />every single visit.
           </h2>
           <p className="mt-4 text-brand-muted text-lg leading-relaxed">
-            We built OzClean around the things that matter most to our customers —
-            reliability, safety, and results that speak for themselves.
+            We built OzClean around the things that matter most to our customers: <strong>reliability, professionalism, and exceptional results.</strong> 
           </p>
         </div>
 
