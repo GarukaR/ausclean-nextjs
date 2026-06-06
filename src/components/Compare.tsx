@@ -193,15 +193,6 @@ export default function Compare() {
           </div>
         </div>
 
-        {/* ── Legend ── */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-16 text-xs text-brand-muted">
-          <div className="flex items-center gap-1.5">
-            <div className="w-4 h-4 rounded-full bg-brand/15 flex items-center justify-center shrink-0">
-              <Check className="w-2.5 h-2.5 text-brand" strokeWidth={3} />
-            </div>
-            Included
-          </div>
-        </div>
       </div>
     </section>
   );
