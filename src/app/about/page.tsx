@@ -69,8 +69,8 @@ const SERVICE_AREAS = [
 
 const STATS = [
   { value: "2019", label: "Founded" },
-  { value: "500+", label: "Cleans completed" },
-  { value: "500+", label: "Happy customers" },
+  { value: "1000+", label: "Cleans completed" },
+  { value: "100+", label: "Happy customers" },
   { value: "4.75★", label: "Average rating" },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
@@ -80,7 +80,7 @@ export default function AboutPage() {
     <main className="min-h-screen">
 
       {/* ── Hero ── */}
-      <section className="bg-brand-bg pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-brand-bg pt-16 pb-20 relative overflow-hidden">
         <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-brand/8 blur-3xl pointer-events-none" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

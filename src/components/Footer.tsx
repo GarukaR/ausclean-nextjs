@@ -30,7 +30,7 @@ const SOCIAL_LINKS = [
 
 const CONTACT_INFO = [
   { icon: Phone, text: "+61 428 276 935", href: "tel:+61428276935" },
-  { icon: Mail, text: "ozclean.au@gmail.com", href: "mailto:ozclean.au@gmail.com" },
+  { icon: Mail, text: "info@ozclean.au", href: "mailto:info@ozclean.au" },
   { icon: MapPin, text: "Hampton Park, VIC, Australia", href: "#" },
 ];
 // ─────────────────────────────────────────────────────────────────────────────

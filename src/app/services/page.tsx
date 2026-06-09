@@ -95,7 +95,7 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-brand-bg">
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-32 pb-16 border-b border-brand-border">
+      <section className="bg-white pt-16 pb-16 border-b border-brand-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Our Services</p>

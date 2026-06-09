@@ -23,8 +23,8 @@ const CONTACT_DETAILS = [
   {
     icon: Mail,
     label: "Email",
-    value: "ozclean.au@gmail.com",
-    href: "mailto:ozclean.au@gmail.com",
+    value: "info@ozclean.au",
+    href: "mailto:info@ozclean.au",
     sub: "We reply within 2 hours",
   },
   {
@@ -57,8 +57,8 @@ const CONNECT_OPTIONS = [
     icon: Mail,
     title: "Email Us",
     desc: "Send us an email and we'll get back to you within 2 business hours.",
-    action: "ozclean.au@gmail.com",
-    href: "mailto:ozclean.au@gmail.com",
+    action: "info@ozclean.au",
+    href: "mailto:info@ozclean.au",
     style: "bg-brand-accent-bg border border-brand-accent-border",
     btnStyle: "bg-brand-accent hover:bg-brand-accent-dark text-white",
   },
@@ -125,7 +125,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-brand-bg">
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-32 pb-16 border-b border-brand-border">
+      <section className="bg-white pt-16 pb-16 border-b border-brand-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Contact Us</p>
