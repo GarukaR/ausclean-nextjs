@@ -109,7 +109,7 @@ export default function WhyUs() {
           <div className="flex flex-wrap justify-center sm:justify-start gap-8">
             {[
               { value: "1000+", label: "Cleans completed" },
-              { value: "3 years", label: "Of service business" },
+              { value: "7+ years", label: "Of service business" },
               { value: "100+", label: "Satisfied customers" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center sm:text-left">
